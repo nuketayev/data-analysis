@@ -1,3 +1,4 @@
+#https://numpy.org/doc/stable/reference/index.html#reference
 import numpy as np
 
 a = np.zeros((4,3,2))

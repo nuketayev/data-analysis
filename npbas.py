@@ -1,5 +1,5 @@
 import numpy as np
-
+#https://numpy.org/doc/stable/reference/index.html#reference
 a = np.array([1,2,3,4], dtype='int16')
 print("Array a:",a)
 

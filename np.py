@@ -1,3 +1,4 @@
+#https://numpy.org/doc/stable/reference/index.html#reference
 import numpy as np
 
 np.int8

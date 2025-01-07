@@ -1,3 +1,5 @@
+#https://numpy.org/doc/stable/reference/index.html#reference
+
 # Initialize an array as below:
 # [1,1,1,1,1]
 # [1,0,0,0,1]
