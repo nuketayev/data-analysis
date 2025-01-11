@@ -28,25 +28,28 @@ langs = pd.Series(['English', 'Hindi', 'German', 'Japanese', 'Portuguese', 'Engl
 
 # print(data['Population (millions)'] > 100)
 # print(data.loc[data['Population (millions)'] > 100, 'Number of Presidents'])
-print(data.loc[data['Population (millions)'] > 100, ['Number of Presidents', 'Crime Rate (per 100k)']])
+# print(data.loc[data['Population (millions)'] > 100, ['Number of Presidents', 'Crime Rate (per 100k)']])
 
 
 crisis = pd.Series([0.8, 1.18], index=['GDP (trillions USD)', 'Crime Rate (per 100k)'])
-print(crisis)
-
-data = data[['GDP (trillions USD)', 'Crime Rate (per 100k)']] * crisis
-print("Data after crisis:")
-print(data[['GDP (trillions USD)']])
+# print(crisis)
+data[['GDP (trillions USD)', 'Crime Rate (per 100k)']] = data[['GDP (trillions USD)', 'Crime Rate (per 100k)']] * crisis
+# print("Data after crisis:")
+# print(data[['GDP (trillions USD)']])
 
 print(data.drop('USA'))
 
 data['Language'] = langs
 
-print(data)
+# print(data)
 
 data = data.rename(
     columns={
         'GDP (trillions USD)':"GDP"
     }
 )
+print(data)
+
+data['GDP per capita'] = (data['GDP'] / data['Population (millions)'])
+print("GDP per capita")
 print(data)
