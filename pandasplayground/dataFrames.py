@@ -20,6 +20,6 @@ data.index = [
 
 print(data.shape)
 print(data)
-print()
-print(data.iloc[4:,2:4]) # stop is exclusive
-print(data.loc["Brazil":"Australia", 'GDP (trillions USD)':'Crime Rate (per 100k)']) # stop is inclusive
+# print()
+# print(data.iloc[4:,2:4]) # stop is exclusive
+print(data['Continent'=='America']) # stop is inclusive
