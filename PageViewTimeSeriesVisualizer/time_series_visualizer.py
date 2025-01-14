@@ -7,7 +7,7 @@ register_matplotlib_converters()
 np.float = float
 
 # Import data (Make sure to parse dates. Consider setting index column to 'date'.)
-df = pd.read_csv('fcc-forum-pageviews.csv', index_col='date', parse_dates=['date'])
+df = pd.read_csv('PageViewTimeSeriesVisualizer/fcc-forum-pageviews.csv', index_col='date', parse_dates=['date'])
 
 # Clean data
 df = df[(df['value'] >= df['value'].quantile(0.025)) & (df['value'] <= df['value'].quantile(0.975))]
